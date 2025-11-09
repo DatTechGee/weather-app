@@ -1,4 +1,4 @@
-# Klimate - Modern Weather App ⛅
+# Klimate Dattechgee - Modern Weather App ⛅
 
 A modern weather forecast application built with cutting-edge technologies, featuring real-time weather data, beautiful UI, and seamless dark/light mode.
 
