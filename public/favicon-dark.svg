@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradients -->
+  <defs>
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0EA5E9"/>
+      <stop offset="100%" style="stop-color:#2563EB"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Sun circle -->
+  <circle cx="16" cy="16" r="4" fill="url(#iconGradient)"/>
+  
+  <!-- Sun rays -->
+  <path d="M16 8V5M16 27V24M24 16H27M5 16H8M21.7 10.3L23.8 8.2M8.2 23.8L10.3 21.7M21.7 21.7L23.8 23.8M8.2 8.2L10.3 10.3" 
+    stroke="url(#iconGradient)" stroke-width="2" stroke-linecap="round"/>
+    
+  <!-- Small cloud -->
+  <path d="M19 15.5C19 13.2 17.2 11.4 15 11.4C13.1 11.4 11.5 12.8 11 14.6C10.9 14.6 10.8 14.6 10.7 14.6C9.2 14.6 8 15.8 8 17.3C8 18.8 9.2 20 10.7 20H18.3C20 20 21.4 18.6 21.4 16.9C21.4 15.2 20 13.8 18.3 13.8C18.1 13.8 17.9 13.8 17.7 13.9" 
+    stroke="url(#iconGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
