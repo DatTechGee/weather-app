@@ -15,15 +15,81 @@ A modern weather forecast application built with cutting-edge technologies, feat
 - 🔍 City search with history
 - 🌡️ Detailed weather metrics
 
-## 🛠️ Technologies
+## 🛠️ Core Technologies
 
 - **Frontend**: React + TypeScript
-- **State Management**: TanStack Query
-- **UI Components**: Shadcn UI
-- **Styling**: Tailwind CSS
-- **Charts**: Recharts
 - **Build Tool**: Vite
+- **Styling**: Tailwind CSS
 - **API**: OpenWeather API
+
+## 📚 Key Libraries and Their Usage
+
+### TanStack Query (React Query)
+- Efficient API data fetching and caching
+- Real-time weather updates with automatic background refetching
+- Optimistic updates for favorites management
+- Built-in loading and error states
+```typescript
+const { data, isLoading } = useQuery({
+  queryKey: ['weather', city],
+  queryFn: () => fetchWeatherData(city)
+});
+```
+
+### React Router DOM
+- Dynamic routing for city-specific weather pages
+- Clean URLs with city names
+- Search history management
+```typescript
+// Route definitions
+<Route path="/city/:cityName" element={<CityPage />} />
+
+// Navigation
+navigate(`/city/${cityName}`);
+```
+
+### Recharts
+- Interactive weather charts and graphs
+- Temperature trend visualization
+- Precipitation and humidity charts
+- Responsive design adaptation
+```typescript
+<LineChart data={hourlyData}>
+  <Line type="monotone" dataKey="temp" stroke="#8884d8" />
+  <XAxis dataKey="time" />
+  <YAxis />
+  <Tooltip />
+</LineChart>
+```
+
+### Radix UI
+- Accessible component primitives
+- Used throughout the app:
+  - Dialog: City search modal
+  - DropdownMenu: Settings and options
+  - ScrollArea: Long lists of cities
+  - Switch: Theme toggler
+  - Tooltip: UI element descriptions
+```typescript
+<Dialog.Root>
+  <Dialog.Trigger>Search Cities</Dialog.Trigger>
+  <Dialog.Content>
+    <SearchForm />
+  </Dialog.Content>
+</Dialog.Root>
+```
+
+### Lucide React
+- Modern icon system
+- Weather condition icons
+- Navigation and UI element icons
+- Consistent styling across the app
+```typescript
+import { Cloud, Sun, Wind } from 'lucide-react';
+
+// Usage in components
+<Sun className="h-6 w-6" />
+```
 
 ## 🚀 Getting Started
 
